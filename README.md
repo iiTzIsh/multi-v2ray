@@ -39,17 +39,17 @@ A tool to manage v2ray/xray config json, support multiple user && group manage
 ## How To Use
 new install
 ```
-sudo apt update && apt upgrade -y && git clone https://github.com/MalinrRuwan/multi-v2ray.git && cd multi-v2ray && bash v2ray.sh
+sudo apt update && apt upgrade -y && git clone https://github.com/iiTzIsh/multi-v2ray.git && cd multi-v2ray && bash v2ray.sh
 ```
 
 keep profile to update
 ```
-sudo git clone https://github.com/MalinrRuwan/multi-v2ray.git && cd multi-v2ray && bash v2ray.sh -k
+sudo git clone https://github.com/iiTzIsh/multi-v2ray.git && cd multi-v2ray && bash v2ray.sh -k
 ```
 
 uninstall
 ```
-sudo git clone https://github.com/MalinrRuwan/multi-v2ray.git && cd multi-v2ray && bash v2ray.sh --remove
+sudo git clone https://github.com/iiTzIsh/multi-v2ray.git && cd multi-v2ray && bash v2ray.sh --remove
 ```
 
 ## Command Line
@@ -84,14 +84,14 @@ v2ray/xray [-h|help] [options]
 ```
 
 ## Docker Run
-default will create random port + random header(srtp | wechat-video | utp | dtls) kcp profile(**if use xray replace image to MalinrRuwan/xray**)  
+default will create random port + random header(srtp | wechat-video | utp | dtls) kcp profile(**if use xray replace image to iiTzIsh/xray**)  
 ```
-docker run -d --name v2ray --privileged --restart always --network host MalinrRuwan/v2ray
+docker run -d --name v2ray --privileged --restart always --network host iiTzIsh/v2ray
 ```
 
 custom v2ray config.json:
 ```
-docker run -d --name v2ray --privileged -v /path/config.json:/etc/v2ray/config.json --restart always --network host MalinrRuwan/v2ray
+docker run -d --name v2ray --privileged -v /path/config.json:/etc/v2ray/config.json --restart always --network host iiTzIsh/v2ray
 ```
 
 check v2ray profile:
