@@ -1,5 +1,5 @@
 # multi-v2ray
-a tool to manage v2ray/xray config json, support multiple user && group manage  
+A tool to manage v2ray/xray config json, support multiple user && group manage  
 
 ## Features
 
@@ -104,11 +104,6 @@ docker exec v2ray bash -c "v2ray info"
 systemctl stop firewalld.service
 systemctl disable firewalld.service
 ```
-
-## Dependent
-pip: https://pypi.org/project/v2ray-util/  
-python3: https://github.com/MalinrRuwan/python3-install  
-acme: https://github.com/Neilpang/acme.sh
 
 ## Special Credits
 > [Jrohy](https://github.com/Jrohy)
