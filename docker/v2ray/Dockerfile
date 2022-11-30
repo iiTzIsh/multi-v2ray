@@ -1,6 +1,6 @@
 FROM --platform=$TARGETPLATFORM centos:7 as builder
 
-RUN curl -L -s https://raw.githubusercontent.com/malinrruwan/multi-v2ray/master/go.sh|bash
+RUN curl -L -s https://raw.githubusercontent.com/iiTzIsh/multi-v2ray/master/go.sh|bash
 
 FROM --platform=$TARGETPLATFORM alpine:latest
 
@@ -8,7 +8,7 @@ LABEL maintainer "iiTzIsh <euvkzx@iiTzIsh.com>"
 
 ENV COMPLETION_FILE "/usr/share/bash-completion/completions/v2ray"
 
-ENV SOURCE_COMPLETION_FILE "https://raw.githubusercontent.com/malinrruwan/multi-v2ray/master/v2ray"
+ENV SOURCE_COMPLETION_FILE "https://raw.githubusercontent.com/iiTzIsh/multi-v2ray/master/v2ray"
 
 ENV VERSION_LIST "https://api.github.com/repos/iiTzIsh/multi-v2ray/tags"
 
