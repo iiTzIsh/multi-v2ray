@@ -4,7 +4,7 @@ RUN curl -L -s https://raw.githubusercontent.com/iiTzIsh/multi-v2ray/master/go.s
 
 FROM --platform=$TARGETPLATFORM alpine:latest
 
-LABEL maintainer "MalinrRuwan <euvkzx@iiTzIsh.com>"
+LABEL maintainer "iiTzIsh <euvkzx@iiTzIsh.com>"
 
 ENV COMPLETION_FILE "/usr/share/bash-completion/completions/v2ray"
 
