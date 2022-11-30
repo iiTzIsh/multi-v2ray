@@ -1,6 +1,6 @@
 #!/bin/bash
-# Author: MalinrRuwan
-# github: https://github.com/MalinrRuwan/multi-v2ray
+# Author: iiTzIsh
+# github: https://github.com/iiTzIsh/multi-v2ray
 
 #Timing task Beijing execution time (0~23)
 BEIJING_UPDATE_TIME=3
@@ -18,7 +18,7 @@ REMOVE=0
 
 CHINESE=0
 
-BASE_SOURCE_PATH="https://raw.githubusercontent.com/MalinrRuwan/multi-v2ray/master"
+BASE_SOURCE_PATH="https://raw.githubusercontent.com/iiTzIsh/multi-v2ray/master"
 
 UTIL_PATH="/etc/v2ray_util/util.cfg"
 
@@ -156,13 +156,13 @@ installDependent(){
     fi
 
     #install python3 & pip
-    source <(curl -sL https://raw.githubusercontent.com/MalinrRuwan/multi-v2ray/master/python3/install.sh)
+    source <(curl -sL https://raw.githubusercontent.com/iiTzIsh/multi-v2ray/master/python3/install.sh)
 }
 
 updateProject() {
     [[ ! $(type pip 2>/dev/null) ]] && colorEcho $RED "pip no install!" && exit 1
 
-    pip install -U git+https://github.com/MalinrRuwan/multi-v2ray#egg=v2ray_util
+    pip install -U git+https://github.com/iiTzIsh/multi-v2ray#egg=v2ray_util
 
     if [[ -e $UTIL_PATH ]];then
         [[ -z $(cat $UTIL_PATH|grep lang) ]] && echo "lang=en" >> $UTIL_PATH
@@ -191,7 +191,7 @@ updateProject() {
     fi
     
     #Install V2ray main program
-    [[ ${INSTALL_WAY} == 0 ]] && bash <(curl -L -s https://raw.githubusercontent.com/malinrruwan/multi-v2ray/master/go.sh)
+    [[ ${INSTALL_WAY} == 0 ]] && bash <(curl -L -s https://raw.githubusercontent.com/iiTzIsh/multi-v2ray/master/go.sh)
 }
 
 #Time Syncronization
