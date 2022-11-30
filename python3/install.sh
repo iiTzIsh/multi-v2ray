@@ -1,6 +1,6 @@
 #!/bin/bash
-# Author: MalinrRuwan
-# Github: https://github.com/MalinrRuwan/python3-install
+# Author: iiTzIsh
+# Github: https://github.com/iiTzIsh/python3-install
 
 INSTALL_VERSION=""
 
